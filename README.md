@@ -7,4 +7,5 @@ Based on the 'Test Screenshot Extension' on https://developer.chrome.com/extensi
 Hotkeys
 
 Ctrl+Shift+E - Toggle cropping overlay
+
 Ctrl+Shift+Z - Take screenshot
