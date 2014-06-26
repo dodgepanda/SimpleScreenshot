@@ -68,8 +68,8 @@ function screenshotCommand(){
 	chrome.tabs.executeScript({
 		code: 'simpleScreenshots.getDragbox();'
 	}, function(result){
-		console.log(result);
-		console.log(result[0]);
+		//console.log(result);
+		//console.log(result[0]);
 		if(result[0]){
 			takeScreenshot(result[0].x,result[0].y,result[0].w,result[0].h);
 		}else{
@@ -91,7 +91,9 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 
 //Event listener for shortcut hotkeys
 chrome.commands.onCommand.addListener(function(command) {
+	console.log(command);
 	if(command == 'toggle-feature-overlay'){
+		console.log('');
 		toggleOverlay();
 	}
 	if(command == 'debug'){
