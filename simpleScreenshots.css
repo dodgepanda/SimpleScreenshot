@@ -1,0 +1,46 @@
+div#simpleScreenshots_overlay_top
+div#simpleScreenshots_overlay_left
+div#simpleScreenshots_overlay_right
+div#simpleScreenshots_overlay_bottom{
+	background-color: #F00;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	position: fixed; top: 0; left: 0;
+	width: 0%; height: 0%;
+}
+div.simpleScreenshots_overlay
+{
+	/*
+	background-color: #000;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	*/
+	/*
+	background-color: rgba(255,255,255,0.5);
+	*/
+	position: fixed; top: 0; left: 0;
+	width: 100%; height: 100%;
+	z-index: 10000;
+}
+div#simpleScreenshots_dragbox
+{
+	outline:1px dashed;
+	outline-color:black;
+	outline-offset:0px;
+	
+	/*
+	background-color: #FFF;
+	filter:alpha(opacity=70);
+	opacity: .7;
+	*/
+	width: 100px; height: 100px;
+	cursor:move;
+	position: fixed; top: 100; left: 100;
+	/*
+	position: fixed; top: 0; left: 0;
+	resize:both;
+	overflow:auto;	
+	min-height:1px;
+	min-width:1px;
+	*/
+}
